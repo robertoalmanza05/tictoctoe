@@ -31,9 +31,8 @@ function Index() {
       <p className="p">Hey {playerActual}, es tu turno! </p>
 
       <div className="grid">
-        {Array(9)
-          .fill(null)
-          .map((_, i) => {
+        {
+          cuadrados.map((_, i) => {
             return (
               <Cuadrado
                 ganador={ganador}
@@ -44,7 +43,8 @@ function Index() {
             );
           })}
       </div>
-    </div>
+      
+      </div>
   );
 }
 
