@@ -12,13 +12,16 @@
  width: 300px;
  height: 300px;
   grid-template-columns: repeat(3, 1fr);
+  background-color: black;
+  
 }
 
 .square {
   width: 100px;
   height: 100px;
   font-size: 5rem;
-  color: #443f3f;
+  color: black;
+  background-color: rgb(#A6A098);
   border: solid 2px black;
 }
 
@@ -46,4 +49,30 @@ p {
   align-items: center;
   padding-left: 30px;
   
+}
+.turn{
+margin-top: 30px;
+  display: flex;
+  grid-gap: 40px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-left: 10%;
+  width: 240px;
+  background-color:transparent;
+  
+}
+.squareX{
+  width: 100px;
+  height: 100px;
+  font-size: 5rem;
+  color: #000000;
+  background-color: rgb(1, 156, 1);
+  border: solid 2px black;
+}
+.squareO{
+  width: 100px;
+  height: 100px;
+  font-size: 5rem;
+  color: #000000;
+  background-color:  rgb(1, 156, 1);
+  border: solid 2px black;
 }

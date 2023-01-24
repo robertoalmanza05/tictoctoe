@@ -7,10 +7,11 @@ export default function Index({
   value,
   onClick,
   ganador
-}:{
-  ganador: string | null
-  value:string | null
-  onClick: ()=>void
+}:
+{
+  ganador?: string | null
+  value?:string | null
+  onClick?: ()=>void
 }
 ) 
 

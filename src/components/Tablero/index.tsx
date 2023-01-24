@@ -1,3 +1,4 @@
+import { truncate } from "fs";
 import { useEffect, useState } from "react";
 import Cuadrado from "../Cuadrado";
 
@@ -8,6 +9,8 @@ function Index() {
   const [playerActual, setPlayerActual] = useState<"X" | "O">();
   const [ganador, setGanador] = useState(null);
 
+const classnameCuadradoX=`square${(playerActual == "X")? "X": ""} `;
+const classnameCuadradoO=`square${(playerActual == "O")? "O": ""} `;
   useEffect(() => {
     const f = () => {
       setPlayerActual(Math.floor(Math.random() * 2) === 1 ? "X" : "O");
@@ -43,7 +46,17 @@ function Index() {
             );
           })}
       </div>
-      
+      <h1 style={{
+        marginLeft:"27%",
+        fontSize:"1.5rem",
+        marginTop:"4%"
+      }}>Turno actual</h1>
+        
+      <section className='turn'>
+        <button className={classnameCuadradoX} disabled={true} >X </button>
+        <button className={classnameCuadradoO} disabled={true}>O</button>
+        </section>
+
       </div>
   );
 }
