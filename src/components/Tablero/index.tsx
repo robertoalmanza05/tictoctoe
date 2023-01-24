@@ -28,7 +28,12 @@ const classnameCuadradoO=`square${(playerActual == "O")? "O": ""} `;
     setCuadrados(newData);
     setPlayerActual(playerActual === "X" ? "O" : "X");
   }
+const onclickReset =()=>{
+setCuadrados(Array(9).fill(null))
+setPlayerActual(Math.floor(Math.random() * 2) === 1 ? "X" : "O");
 
+}
+  
   return (
     <div>
       <p className="p">Hey {playerActual}, es tu turno! </p>
@@ -56,7 +61,10 @@ const classnameCuadradoO=`square${(playerActual == "O")? "O": ""} `;
         <button className={classnameCuadradoX} disabled={true} >X </button>
         <button className={classnameCuadradoO} disabled={true}>O</button>
         </section>
-
+<button style={{width:"90px",
+height:"50px", display:"flex",
+justifyContent:"center",marginTop:"5%", marginLeft:"34%",
+background:"#007ACC",fontSize:"20px"}} onClick={onclickReset} >RESET</button>
       </div>
   );
 }
