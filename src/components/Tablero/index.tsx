@@ -9,8 +9,8 @@ function Index() {
   const [playerActual, setPlayerActual] = useState<"X" | "O">();
   const [ganador, setGanador] = useState(null);
 
-const classnameCuadradoX=`square${(playerActual == "X")? "X": ""} `;
-const classnameCuadradoO=`square${(playerActual == "O")? "O": ""} `;
+const classnameCuadradoX=`square${(playerActual == "X")? "S": ""} `;
+const classnameCuadradoO=`square${(playerActual == "O")? "S": ""} `;
   useEffect(() => {
     const f = () => {
       setPlayerActual(Math.floor(Math.random() * 2) === 1 ? "X" : "O");
