@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import Tablero from '@/components/Tablero'
+import Link from 'next/link';
 
 
 
@@ -15,7 +16,8 @@ export default function Home() {
 
       <main className={styles.main}>
         <Tablero />
-      </main>
+     <Link href="/A">a Us</Link>  
+         </main>
     </div>
   );
 }
