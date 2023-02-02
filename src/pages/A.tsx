@@ -24,7 +24,9 @@ export default function A() {
 
   return (
     <div style={{ backgroundColor: "black" }}>
-<h1 style={{color:"green", display:"flex",justifyContent:"center"}}>Hola</h1>
+      <h1 style={{ color: "green", display: "flex", justifyContent: "center" }}>
+        Hola
+      </h1>
 
       <div
         style={{
@@ -35,25 +37,23 @@ export default function A() {
         <div
           style={{
             backgroundColor: "red",
-            justifyContent: "center",
             display: "grid",
-            gridTemplateColumns: ".8fr .8fr .8fr .8fr ",
+            gridTemplateColumns: ".8fr .8fr .8fr .8fr",
             gridGap: "10px",
-          
+           
           }}
         >
           {images.map((image, index) => {
             return (
+              // eslint-disable-next-line @next/next/no-img-element, jsx-a11y/alt-text
               <img
                 style={{
-
                   width: "250px",
                   height: "250px",
                   borderRadius: "40px",
-                  paddingLeft:"15px",
-                  paddingRight:"15px",
-                  paddingTop:"5px"
-
+                  paddingLeft: "15px",
+                  paddingRight: "15px",
+                  paddingTop: "5px",
                 }}
                 key={index}
                 src={`${image}`}
