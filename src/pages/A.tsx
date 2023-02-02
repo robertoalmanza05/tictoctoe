@@ -35,21 +35,25 @@ export default function A() {
         <div
           style={{
             backgroundColor: "red",
-            width: "70%",
             justifyContent: "center",
             display: "grid",
             gridTemplateColumns: ".8fr .8fr .8fr .8fr ",
             gridGap: "10px",
+          
           }}
         >
           {images.map((image, index) => {
             return (
               <img
                 style={{
-                  width: "300px",
-                  height: "300px",
+
+                  width: "250px",
+                  height: "250px",
                   borderRadius: "40px",
-                  marginLeft: "1%",
+                  paddingLeft:"15px",
+                  paddingRight:"15px",
+                  paddingTop:"5px"
+
                 }}
                 key={index}
                 src={`${image}`}
