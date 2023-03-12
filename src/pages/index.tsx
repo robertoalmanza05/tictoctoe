@@ -16,7 +16,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <Tablero />
-     <Link href="/A">a Us</Link>  
+     <Link href="/A">pendejo</Link>  
          </main>
     </div>
   );
